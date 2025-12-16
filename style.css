@@ -5,10 +5,9 @@ body {
 }
 
 a {
-  color: #e5b083;
+  color: #426e5d;
 }
 
-a:hover,
-a:visited {
-  color: #426e5d;
+a:hover {
+  color: #e5b083;
 }
