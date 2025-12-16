@@ -8,6 +8,7 @@ a {
   color: #e5b083;
 }
 
-a:hover {
+a:hover,
+a:visited {
   color: #426e5d;
 }
