@@ -1,5 +1,13 @@
 body {
-    background-color: #222323;
+    background-color: #20283d;
     font-family: monospace;
-    color: #f0f6f0;
+    color: #fbf7f3;
+}
+
+a {
+  color: #e5b083;
+}
+
+a:hover {
+  color: #426e5d;
 }
