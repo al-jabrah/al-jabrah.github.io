@@ -1,0 +1,13 @@
+body {
+    background-color: #20283d;
+    font-family: monospace;
+    color: #fbf7f3;
+}
+
+a {
+  color: #426e5d;
+}
+
+a:hover {
+  color: #e5b083;
+}
