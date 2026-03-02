@@ -1,22 +1,31 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
-    <head>
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
-        </style>
-        <title>al-jabrah</title>
-        <link href="style.css" rel="stylesheet" />
-    </head>
+<head>   
+    <link rel="stylesheet" href="styles.css"> 
+    <title>al-jabrah</title>
+</head>
 
-    <body>
-        <h1>About</h1>
-        <p>This website serves as a place to document and display personal projects developed by al-jabrah.</p>
+<body>
+    <h1 style="text-align: center; padding-bottom: 1rem;" id="loading">
+        My awesome website
+    </h1>
+
+    <div>
+        <p id="test"></p>
+
         <ul>
             <li>
-                <a href="https://github.com/al-jabrah/al-jabrah.github.io">github.com/al-jabrah/al-jabrah.github.io</a>
+                <a href="https://www.google.com">gongle</a>
             </li>
-        </ul>   
-    </body>
+        </ul>
+    </div>
+
+    <script>
+        document.getElementById("test").innerHTML = `This is my website and it is awesome`;
+    </script>
+
+</body>
 
 </html>
+
