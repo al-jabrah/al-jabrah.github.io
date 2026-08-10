@@ -17,3 +17,8 @@ button{
     background-color: #485872;
     color: #f0c537;
 }
+.image-button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}

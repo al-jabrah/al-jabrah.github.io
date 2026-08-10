@@ -16,18 +16,37 @@
                 <button onclick="myFunction()">muhehehe</button>
         </div>
 
-        <button onclick="playNote('c')">C</button>
-        <button onclick="playNote('d')">D</button>
-        <button onclick="playNote('e')">E</button>
-        <button onclick="playNote('f')">F</button>
+        <button id="c" class="image-button" onclick="playNote('c')">
+            <img src="src/assets/star.png" style="height: 2rem;">
+        </button>
 
-        <button onclick="playNote('g')">G</button>
+        <button id="d" class="image-button" onclick="playNote('d')" >
+            <img src="src/assets/star.png" style="height: 3rem;">
+        </button>
 
-        <button onclick="playNote('a')">A</button>
+        <button id="e" class="image-button" onclick="playNote('e')">
+            <img src="src/assets/star.png" style="height: 4rem;">
+        </button>
 
-        <button onclick="playNote('b')">B</button>
+        <button id="f" class="image-button" onclick="playNote('f')">
+            <img src="src/assets/star.png" style="height: 5rem; transform:rotate(-90deg);">
+        </button>
 
-        <button onclick="playNote('c-2')">C</button>
+        <button id="g" class="image-button" onclick="playNote('g')">
+            <img src="src/assets/star.png" style="height: 6rem;">
+        </button>
+
+        <button id="a" class="image-button" onclick="playNote('a')">
+            <img src="src/assets/star.png" style="height: 7rem;">
+        </button>
+
+        <button id="b" class="image-button" onclick="playNote('b')">
+            <img src="src/assets/star.png" style="height: 8rem;">
+        </button>
+
+        <button id="c-2" class="image-button" onclick="playNote('c-2')">
+            <img src="src/assets/star.png" style="height: 9rem;">
+        </button>
 
 
 
@@ -37,10 +56,19 @@
                 audio.play();
             }
 
+            const randomNumber = (Math.random() * 90) - 45;
+            document.getElementById("g").setAttribute("style", "transform: rotate(" + randomNumber + "deg)");
+
+
             function playNote(key) {
                 const path = `src/audio/${key}.mp3`;
                 const note = new Audio(`src/audio/${key}.mp3`);
                 note.play();
+            }
+
+            function setupStars() {
+                document.getElementById("c").setAttribute("style", "transform: rotate(" + randomNumber + "deg)");
+
             }
         </script>
 
