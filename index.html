@@ -11,18 +11,36 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;"
+            height: 20vh;"
             >
                 <button onclick="myFunction()">muhehehe</button>
         </div>
+
+        <button onclick="playNote('c')">C</button>
+        <button onclick="playNote('d')">D</button>
+        <button onclick="playNote('e')">E</button>
+        <button onclick="playNote('f')">F</button>
+
+        <button onclick="playNote('g')">G</button>
+
+        <button onclick="playNote('a')">A</button>
+
+        <button onclick="playNote('b')">B</button>
+
+        <button onclick="playNote('c-2')">C</button>
+
 
 
         <script>
             const audio = new Audio('src/audio/muhehehe.mp3')
             function myFunction() {
-                audio.play().catch(error => {
-                console.log("Playback blocked by browser policy until user interacts:", error);
-            });
+                audio.play();
+            }
+
+            function playNote(key) {
+                const path = `src/audio/${key}.mp3`;
+                const note = new Audio(`src/audio/${key}.mp3`);
+                note.play();
             }
         </script>
 

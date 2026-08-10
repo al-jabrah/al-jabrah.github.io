@@ -9,3 +9,11 @@
     --tz-orange-red: #ce5743;
     --tz-white: #ffffff;
 }
+*{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+button{
+    background-color: #485872;
+    color: #f0c537;
+}
