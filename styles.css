@@ -22,3 +22,9 @@ button{
     border: none;
     cursor: pointer;
 }
+.center-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw 0;
+}

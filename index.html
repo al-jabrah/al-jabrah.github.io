@@ -7,47 +7,43 @@
 
     <body style="background-color: #202243;">
 
-        <div style="
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 20vh;"
-            >
+        <div class="center-line" >
                 <button onclick="myFunction()">muhehehe</button>
         </div>
 
-        <button id="c" class="image-button" onclick="playNote('c')">
-            <img src="src/assets/star.png" style="height: 2rem;">
-        </button>
+        <div class="center-line" style="display: flex; flex-direction: row; justify-content: space-evenly;">
+            <button id="c" class="image-button" onclick="playNote('c')">
+                <img src="src/assets/star.png" style="height: 2rem;">
+            </button>
 
-        <button id="d" class="image-button" onclick="playNote('d')" >
-            <img src="src/assets/star.png" style="height: 3rem;">
-        </button>
+            <button id="d" class="image-button" onclick="playNote('d')" >
+                <img src="src/assets/star.png" style="height: 3rem;">
+            </button>
 
-        <button id="e" class="image-button" onclick="playNote('e')">
-            <img src="src/assets/star.png" style="height: 4rem;">
-        </button>
+            <button id="e" class="image-button" onclick="playNote('e')">
+                <img src="src/assets/star.png" style="height: 4rem;">
+            </button>
 
-        <button id="f" class="image-button" onclick="playNote('f')">
-            <img src="src/assets/star.png" style="height: 5rem; transform:rotate(-90deg);">
-        </button>
+            <button id="f" class="image-button" onclick="playNote('f')">
+                <img src="src/assets/star.png" style="height: 5rem; transform:rotate(-90deg);">
+            </button>
 
-        <button id="g" class="image-button" onclick="playNote('g')">
-            <img src="src/assets/star.png" style="height: 6rem;">
-        </button>
+            <button id="g" class="image-button" onclick="playNote('g')">
+                <img src="src/assets/star.png" style="height: 6rem;">
+            </button>
 
-        <button id="a" class="image-button" onclick="playNote('a')">
-            <img src="src/assets/star.png" style="height: 7rem;">
-        </button>
+            <button id="a" class="image-button" onclick="playNote('a')">
+                <img src="src/assets/star.png" style="height: 7rem; align-items: center;">
+            </button>
 
-        <button id="b" class="image-button" onclick="playNote('b')">
-            <img src="src/assets/star.png" style="height: 8rem;">
-        </button>
+            <button id="b" class="image-button" onclick="playNote('b')">
+                <img src="src/assets/star.png" style="height: 8rem;">
+            </button>
 
-        <button id="c-2" class="image-button" onclick="playNote('c-2')">
-            <img src="src/assets/star.png" style="height: 9rem;">
-        </button>
-
+            <button id="c-2" class="image-button" onclick="playNote('c-2')">
+                <img src="src/assets/star.png" style="height: 9rem;">
+            </button>
+        </div>
 
 
         <script>
@@ -56,8 +52,7 @@
                 audio.play();
             }
 
-            const randomNumber = (Math.random() * 90) - 45;
-            document.getElementById("g").setAttribute("style", "transform: rotate(" + randomNumber + "deg)");
+            setupStars();
 
 
             function playNote(key) {
@@ -67,7 +62,38 @@
             }
 
             function setupStars() {
-                document.getElementById("c").setAttribute("style", "transform: rotate(" + randomNumber + "deg)");
+                // document.getElementById("d").setAttribute("style", "transform: rotate(" + ((Math.random() * 90) - 45) + "deg)");
+                // document.getElementById("e").setAttribute("style", "transform: rotate(" + ((Math.random() * 90) - 45) + "deg)");
+                // document.getElementById("f").setAttribute("style", "transform: rotate(" + ((Math.random() * 90) - 45) + "deg)");
+                // document.getElementById("g").setAttribute("style", "transform: rotate(" + ((Math.random() * 90) - 45) + "deg)");
+                // document.getElementById("a").setAttribute("style", "transform: rotate(" + ((Math.random() * 90) - 45) + "deg)");
+                // document.getElementById("b").setAttribute("style", "transform: rotate(" + ((Math.random() * 90) - 45) + "deg)");
+                // document.getElementById("c-2").setAttribute("style", "transform: rotate(" + ((Math.random() * 90) - 45) + "deg)"); 
+
+                document.getElementById("c").style.cssText = `
+                    transform: rotate(${((Math.random() * 90) - 45)}deg) translate(${((Math.random() * 30) - 30)}px, ${((Math.random() * 30) - 30)}px);
+                `;
+                document.getElementById("d").style.cssText = `
+                    transform: rotate(${((Math.random() * 90) - 45)}deg) translate(${((Math.random() * 30) - 30)}px, ${((Math.random() * 30) - 30)}px);
+                `;
+                document.getElementById("e").style.cssText = `
+                    transform: rotate(${((Math.random() * 90) - 45)}deg) translate(${((Math.random() * 30) - 30)}px, ${((Math.random() * 30) - 30)}px);
+                `;
+                document.getElementById("f").style.cssText = `
+                    transform: rotate(${((Math.random() * 90) - 45)}deg) translate(${((Math.random() * 30) - 30)}px, ${((Math.random() * 30) - 30)}px);
+                `;
+                document.getElementById("g").style.cssText = `
+                    transform: rotate(${((Math.random() * 90) - 45)}deg) translate(${((Math.random() * 30) - 30)}px, ${((Math.random() * 30) - 30)}px);
+                `;
+                document.getElementById("a").style.cssText = `
+                    transform: rotate(${((Math.random() * 90) - 45)}deg) translate(${((Math.random() * 30) - 30)}px, ${((Math.random() * 30) - 30)}px);
+                `;
+                document.getElementById("b").style.cssText = `
+                    transform: rotate(${((Math.random() * 90) - 45)}deg) translate(${((Math.random() * 30) - 30)}px, ${((Math.random() * 30) - 30)}px);
+                `;
+                document.getElementById("c-2").style.cssText = `
+                    transform: rotate(${((Math.random() * 90) - 45)}deg) translate(${((Math.random() * 30) - 30)}px, ${((Math.random() * 30) - 30)}px);
+                `;
 
             }
         </script>
